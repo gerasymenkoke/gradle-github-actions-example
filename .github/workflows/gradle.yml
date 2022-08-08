@@ -29,7 +29,9 @@ jobs:
           distribution: 'adopt'
           cache: gradle
       - name: Build with Gradle
-        run: ./gradlew build --scan --no-daemon
+        run: |
+               chmod +x gradlew
+               ./gradlew build --scan --no-daemon
   build-with-gradle-build-action-cache:
     runs-on: ubuntu-latest
     steps:
@@ -53,7 +55,9 @@ jobs:
           distribution: 'adopt'
           cache: gradle
       - name: Build with Gradle
-        run: ./gradlew build --scan --no-daemon
+        run: |
+               chmod +x gradlew
+               ./gradlew build --scan --no-daemon
       - name: Archive test report
         uses: actions/upload-artifact@v2
         with:
