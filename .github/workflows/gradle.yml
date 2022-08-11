@@ -21,7 +21,7 @@ jobs:
                chmod +x gradlew
                ./gradlew build --scan --no-daemon
                ./gradlew run
-               ./gradlew tasks --all
+               ./gradlew assemble
       - name: Archive test report
         uses: actions/upload-artifact@v2
         with:
