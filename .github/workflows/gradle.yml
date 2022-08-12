@@ -20,6 +20,7 @@ jobs:
         run: |
                chmod +x gradlew
                ./gradlew build 
+               pwd
             #   ./gradlew run
            #    ./gradlew assemble
       - name: Archive test report
