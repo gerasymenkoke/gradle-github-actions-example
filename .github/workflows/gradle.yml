@@ -16,16 +16,19 @@ jobs:
           java-version: 17
           distribution: 'adopt'
           cache: gradle
-      - uses: gradle/gradle-build-action@v2 
-        with:
-          arguments: build
-     # - name: Build with Gradle
-     #   run: |
-     #          chmod +x gradlew
-     #          ./gradlew build 
-     #          pwd
-            #   ./gradlew run
-           #    ./gradlew assemble
+     
+      - name: Build with Gradle
+        run: |
+                chmod +x gradlew
+                ./gradlew build 
+                 pwd
+                run: ./gradlew assembleRelease
+      - name: Get apk path
+        id: apk-path
+        run: |
+             path=$(find **/build/outputs/apk -name '*.apk' -type f | head -1)
+             echo "::set-output name=path::$path"
+                
       - name: Archive test report
         uses: actions/upload-artifact@v2
         with:
