@@ -17,7 +17,7 @@ jobs:
           distribution: 'adopt'
           cache: gradle
       - uses: gradle/gradle-build-action@v2 
-       with:
+        with:
           arguments: build
       - name: Build with Gradle
         run: |
