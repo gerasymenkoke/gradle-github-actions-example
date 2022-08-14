@@ -18,7 +18,7 @@ dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.5.6'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.5.6'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.5.6'
-    implementation group: 'org.gradle.api.Project', name: 'ndkVersion', version: '21.2.6472646'
+    
    // testImplementation group: 'org.springframework.boot', name: '
 }
 
