@@ -38,3 +38,6 @@ testing {
                 }
            }
          }
+defaultConfig {
+  ndkVersion '21.2.6472646'
+}
