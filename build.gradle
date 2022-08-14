@@ -34,7 +34,7 @@ buildScan {
 testing {
     suites {
         test {
-            useJUnitJupiter()
+           // useJUnitJupiter()
         }
     }
 }
