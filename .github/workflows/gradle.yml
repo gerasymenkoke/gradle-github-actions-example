@@ -40,6 +40,15 @@ jobs:
           name: Test report
           path: build/reports/tests/test
      
+      - name: Upload APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: app
+          path: app/build/outputs/apk/debug/app-debug.apk
+     
+     
+     
+     
 
       - name: Archive site content
         uses: thedoctor0/zip-release@master
