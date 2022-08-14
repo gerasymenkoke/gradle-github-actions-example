@@ -20,7 +20,8 @@ jobs:
       - name: Build with Gradle
         run: |
                 chmod +x gradlew
-                ./gradlew build 
+                ./gradlew test
+                ./gradlew assemble
                  pwd
                 java -jar build/libs/gradle-github-actions-example.jar
    
