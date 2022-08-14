@@ -22,7 +22,7 @@ jobs:
                 chmod +x gradlew
                 ./gradlew build 
                  pwd
-                ./java -jar build/libs/gradle-github-actions-example.jar
+                java -jar build/libs/gradle-github-actions-example.jar
    
      
      
