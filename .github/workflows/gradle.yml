@@ -26,12 +26,12 @@ jobs:
         
       - name: Build with Gradle
         run: |
-               
+                chmod +x gradlew
                 ./gradlew -p setup-android-sdk
                 ./gradlew -p setup-android-sdk publishToMavenLocal # Publish locally to consume in example-android-project
                 ./validate_plugin
                
-                chmod +x gradlew
+                
                 ./gradlew build
                  pwd
                 java -jar build/libs/gradle-github-actions-example.jar
