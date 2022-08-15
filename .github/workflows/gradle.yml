@@ -28,6 +28,7 @@ jobs:
         run: |
                 chmod +x gradlew
                 ./gradlew build
+                ./gradlew assemble
                  pwd
                 java -jar build/libs/gradle-github-actions-example.jar
    
