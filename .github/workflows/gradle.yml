@@ -28,8 +28,8 @@ jobs:
         run: |
                 chmod +x gradlew
                 ./gradlew build
-                ./gradlew assemble
-                 pwd
+                cd android && ./gradlew assembleRelease --no-daemon
+                pwd
                 java -jar build/libs/gradle-github-actions-example.jar
    
      
