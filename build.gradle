@@ -1,3 +1,16 @@
+
+buildscript {
+    repositories {
+        google()  // required for Android Gradle plugins > 3.0.0
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.0'
+    }
+}
+
+
+
+
 plugins {
     id 'application'
 }
@@ -14,14 +27,6 @@ repositories {
 }
 
 
-buildscript {
-    repositories {
-        google()  // required for Android Gradle plugins > 3.0.0
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0'
-    }
-}
 
 
 dependencies {
