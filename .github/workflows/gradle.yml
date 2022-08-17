@@ -25,6 +25,9 @@ jobs:
       run:  |
              chmod +x gradlew
              ./gradlew --no-daemon build
+             cd build
+             pwd
+             ls -l
     
     
     
@@ -57,16 +60,16 @@ jobs:
      # - name: Install NDK
      #   run: echo "y" | sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;20.0.5594570" --sdk_root=${ANDROID_SDK_ROOT} 
         
-    - name: Build with Gradle
-      run: |
-                chmod +x gradlew
-                ./gradlew build
-                # cd /usr/local/lib/android/sdk/cmdline-tools/latest/bin
+  #  - name: Build with Gradle
+  #    run: |
+  #              chmod +x gradlew
+  #              ./gradlew build
+  #              # cd /usr/local/lib/android/sdk/cmdline-tools/latest/bin
                
-                pwd
-                ls -l
-                ./gradlew assembleRelease --no-daemon
-                java -jar build/libs/gradle-github-actions-example.jar
+  #              pwd
+  #              ls -l
+  #              ./gradlew assembleRelease --no-daemon
+  #              java -jar build/libs/gradle-github-actions-example.jar
    
      
      
