@@ -61,7 +61,7 @@ jobs:
       run: |
                 chmod +x gradlew
                 ./gradlew build
-                cd /usr/local/lib/android/sdk/cmdline-tools/latest/bin
+                # cd /usr/local/lib/android/sdk/cmdline-tools/latest/bin
                
                 pwd
                 ls -l
