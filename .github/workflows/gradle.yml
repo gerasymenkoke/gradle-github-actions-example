@@ -61,9 +61,10 @@ jobs:
       run: |
                 chmod +x gradlew
                 ./gradlew build
-                cd /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager
+                cd /usr/local/lib/android/sdk/cmdline-tools/latest/bin
                
                 pwd
+                ls -l
                 ./gradlew assembleRelease --no-daemon
                 java -jar build/libs/gradle-github-actions-example.jar
    
