@@ -26,7 +26,11 @@ jobs:
              ls -l 
              # cd android_sdk/tools/
              pwd
+             cd /usr/local/lib/android/sdk/cmdline-tools/latest/bin
+             pwd
+             ls -l
              cd /usr/local/lib/android/sdk/cmdline-tools/latest/bin/avdmanager
+             pwd
              ls -l
              emulator -list-avds
       
