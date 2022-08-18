@@ -23,8 +23,10 @@ jobs:
       run: |
              sudo apt-get install libc6-dev-i386 lib32z1 openjdk-8-jdk
              pwd
-             cd android_sdk/tools/
+             ls -l 
+             # cd android_sdk/tools/
              pwd
+             cd /usr/local/lib/android/sdk/cmdline-tools/latest/bin
              ls -l
              emulator -list-avds
       
